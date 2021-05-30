@@ -1,5 +1,4 @@
 ## Esta este objeto declarado correctamente ? Como accederiamos a la primera llave ?
-
 ```json
 let person = {
   "first-name": "Jhon",
@@ -82,3 +81,4 @@ const getDetails = () => {
   ```js
   const { name: companyName, address: companyAddress, ...rest } = company
   ```
+
