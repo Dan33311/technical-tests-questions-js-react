@@ -82,3 +82,30 @@ const getDetails = () => {
   const { name: companyName, address: companyAddress, ...rest } = company
   ```
 
+## Haz un refactor del siguiente codigo, utilizando restructuring
+
+```js
+let company = {
+  name: "Bar Company",
+  address: {
+    street: "Bla bla street", 
+    zipcode: 111131,
+    city: "JSCity",
+    country: "JSCountry",
+  },
+  phone: 0034323432,
+  clients: ["Ralf", "Leona", "Clark"]
+}
+
+En formato ES5
+let name = company.name;
+let street = company.address.street;
+let country = company.address.country;
+```
+
+  Respuesta:
+  ```js
+  let { name, address: { street, country} } = company
+  ```
+
+
